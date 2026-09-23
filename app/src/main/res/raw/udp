@@ -1,0 +1,19 @@
+{
+  "server": "serverIPPort_xxx:10000-50000",
+  "obfs": "obfs_xxx",
+  "auth_str": "auth_xxx",
+  "up_mbps": up_xxx,
+  "down_mbps": down_xxx,
+  "retry": 30,
+  "retry_interval": 1,
+   "socks5": {
+        "listen": "127.0.0.1:1080"
+    },
+  "http": {
+      "listen": "127.0.0.1:8989"
+  },
+  "insecure": true,
+  "ca": "",
+  "recv_window_conn": rwcon_xxx,
+  "recv_window": rw_xxx
+}

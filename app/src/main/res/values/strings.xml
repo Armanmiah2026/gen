@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Demo Gen</string>
+    <string name="abc_search_hint">Search</string>
+</resources>

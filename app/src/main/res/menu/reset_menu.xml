@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/reset_server"
+        android:icon="@drawable/ic_menu_delete_servers"
+        android:iconTint="@color/black"
+        android:title="Reset Servers" />
+
+    <item
+        android:id="@+id/reset_payloads"
+        android:icon="@drawable/ic_menu_delete_payloads"
+        android:iconTint="@color/black"
+        android:title="Reset Payloads" />
+
+    <item
+        android:id="@+id/reset_all_configs"
+        android:icon="@drawable/ic_menu_delete_all"
+        android:iconTint="@color/black"
+        android:title="Reset All Configs" />
+</menu>

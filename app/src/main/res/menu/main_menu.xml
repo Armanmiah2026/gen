@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@drawable/ic_info"
+        android:iconTint="@color/black"
+        android:title="About Us" />
+
+    <item
+        android:id="@+id/menu_dec"
+        android:icon="@drawable/ic_info"
+        android:iconTint="@color/black"
+        android:visible="false"
+        android:title="Decript Config" />
+    <item
+        android:id="@+id/menu_api"
+        android:icon="@drawable/ic_import_clip"
+        android:iconTint="@color/black"
+        android:visible="true"
+        android:title="Change API" />
+</menu>

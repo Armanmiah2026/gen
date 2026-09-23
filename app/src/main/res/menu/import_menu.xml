@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/import_file"
+        android:icon="@drawable/ic_import_files"
+        android:iconTint="@color/black"
+        android:title="Import from file" />
+
+    <item
+        android:id="@+id/import_clip"
+        android:icon="@drawable/ic_import_clip"
+        android:iconTint="@color/black"
+        android:title="Import from clipboard" />
+
+    <item
+        android:id="@+id/import_url"
+        android:icon="@drawable/ic_import_online"
+        android:iconTint="@color/black"
+        android:title="Import from online" />
+    <item
+        android:id="@+id/migrate_config_menu"
+        android:icon="@drawable/ic_migrate"
+        android:visible="false"
+        android:title="Migrate Config">
+
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:HTMLCode="http://schemas.android.com/apk/res-auto" >
+
+            <item android:id="@+id/migate_config_clipboard"
+                android:title="Migrate from clipboard"
+                HTMLCode:showAsAction="ifRoom|withText" />
+
+            <item android:id="@+id/migrate_config_online"
+                android:title="Migrate from online"
+                HTMLCode:showAsAction="ifRoom|withText" />
+        </menu>
+
+
+    </item>
+
+</menu>

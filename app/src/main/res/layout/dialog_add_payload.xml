@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Select protocol"/>
+		<Spinner
+			android:id="@+id/proto_spin"
+			android:layout_height="50dp"
+			android:layout_width="fill_parent"
+			android:layout_marginEnd="0dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginBottom="0dp"
+			android:layout_marginTop="10dp" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Select Server"/>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<RadioButton
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="CF"
+				android:layout_weight="1.0"
+				android:id="@+id/cf_radio"/>
+			<RadioButton
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="WS"
+				android:layout_weight="1.0"
+				android:id="@+id/ws_radio"/>
+			<RadioButton
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="HTTP"
+				android:layout_weight="1.0"
+				android:id="@+id/http_radio"/>
+		</LinearLayout>
+		<com.google.android.material.textfield.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/etNetworkName"
+				android:hint="Network Name"/>
+
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_marginTop="5dp"
+			android:id="@+id/etNetworkPayloadInput"
+			android:layout_height="wrap_content">
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/etNetworkPayload"
+				android:hint="Payload"
+				android:maxLines="5"/>
+
+		</com.google.android.material.textfield.TextInputLayout>
+		<com.google.android.material.textfield.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="0dp">
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/etNetworkInfo"
+				android:hint="Network Info"/>
+
+		</com.google.android.material.textfield.TextInputLayout>
+		<LinearLayout
+			android:id="@+id/excluded_udp_layout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="10dp"
+					android:text="Proxy Settings"/>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<com.google.android.material.textfield.TextInputLayout
+						android:layout_width="match_parent"
+						android:layout_marginRight="2.5dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0">
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:layout_height="wrap_content"
+							android:id="@+id/etSquidProxy"
+							android:singleLine="true"
+							android:hint="Squid Proxy/IP"/>
+
+					</com.google.android.material.textfield.TextInputLayout>
+
+					<com.google.android.material.textfield.TextInputLayout
+						android:layout_width="match_parent"
+						android:layout_marginLeft="2.5dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="2.0">
+
+						<EditText
+							android:layout_width="match_parent"
+							android:inputType="number"
+							android:layout_height="wrap_content"
+							android:id="@+id/etSquidPort"
+							android:singleLine="true"
+							android:hint="Squid Port"/>
+
+					</com.google.android.material.textfield.TextInputLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right">
+
+					<CheckBox
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/ckUseDefProxy"
+						android:text="Use Default Proxy"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="0dp"
+				android:layout_marginBottom="5dp">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:id="@+id/etNetworkFrontQuery"
+					android:hint="FrontQuery (optional)"/>
+
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:id="@+id/etNetworkBackQuery"
+					android:hint="BackQuery (optional)"/>
+
+			</com.google.android.material.textfield.TextInputLayout>
+		</LinearLayout>
+
+
+
+		<Spinner
+			android:id="@+id/priority_spin"
+			android:layout_height="50dp"
+			android:visibility="gone"
+			android:layout_width="fill_parent"
+			android:layout_marginEnd="0dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginBottom="0dp"
+			android:layout_marginTop="10dp" />
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Generator"
+				android:layout_marginRight="3dp"
+				android:layout_weight="1.0"
+				android:id="@+id/btnPayloadGen"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Save Network"
+				android:layout_marginLeft="3dp"
+				android:layout_weight="1.0"
+				android:id="@+id/btnSaveNetwork"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>
+
+

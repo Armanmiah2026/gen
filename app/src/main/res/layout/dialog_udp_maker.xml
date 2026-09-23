@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="wrap_content"
+                android:id="@+id/etServerIP"
+                android:hint="Server IP/Host"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="wrap_content"
+                android:id="@+id/etServerObfs"
+                android:hint="obfs"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="wrap_content"
+                android:id="@+id/etServerUpMBPS"
+                android:hint="Up Mbps"
+                android:text="1"
+                android:inputType="number"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="wrap_content"
+                android:id="@+id/etServerDownMBPS"
+                android:hint="Down Mbps"
+                android:text="2"
+                android:inputType="number"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="wrap_content"
+                android:id="@+id/etServerRWConn"
+                android:hint="Recv Window Conn"
+                android:text="196608"
+                android:inputType="number"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="wrap_content"
+                android:id="@+id/etServerRW"
+                android:hint="Recv Window"
+                android:text="491520"
+                android:inputType="number"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="wrap_content"
+                android:id="@+id/etSERVERInfo"
+                android:hint="Server Info"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ckUseLogin"
+                android:text="Use Auto Login"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etServerUser"
+                    android:singleLine="true"
+                    android:hint="Username"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:id="@+id/etServerPass"
+                    android:hint="Password"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="generate"
+                android:layout_weight="1.0"
+                android:id="@+id/btnSaveServer"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+

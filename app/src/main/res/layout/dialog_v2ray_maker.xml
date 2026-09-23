@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="V2ray Type"/>
+
+            <Spinner
+                android:id="@+id/v2ray_v2raytype_spin"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/vmess_layout"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="Address"
+                    android:id="@+id/vmess_address"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="port"
+                    android:id="@+id/vmess_port"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="id"
+                    android:id="@+id/vmess_id"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="alterid"
+                    android:text="0"
+                    android:id="@+id/vmess_alterid"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Security"/>
+
+            <Spinner
+                android:id="@+id/vmess_security_spin"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Network"/>
+
+            <Spinner
+                android:id="@+id/vmess_network_spin"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Head Type"/>
+
+            <Spinner
+                android:id="@+id/vmess_headtype_spin"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="Request Host(host/ws host/h2 host)"
+                    android:id="@+id/vmess_requesthost"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="Path(ws path/h2 path)"
+                    android:id="@+id/vmess_path"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="TLS"/>
+
+            <Spinner
+                android:id="@+id/vmess_tls_spin"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tls_layout"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:hint="SNI"
+                        android:id="@+id/vmess_sni"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fingerprint"/>
+                <Spinner
+                    android:id="@+id/vmess_tls_fingerprint_spin"
+                    android:layout_height="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Alpn"/>
+                <Spinner
+                    android:id="@+id/vmess_tls_alpn_spin"
+                    android:layout_height="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Insecure"/>
+                <Spinner
+                    android:id="@+id/vmess_tls_insecure_spin"
+                    android:layout_height="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reality_layout"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:hint="SNI"
+                        android:id="@+id/vmess_sni_reality"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fingerprint"/>
+                <Spinner
+                    android:id="@+id/vmess_reality_fingerprint_spin"
+                    android:layout_height="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:hint="Publickey"
+                        android:id="@+id/vmess_publickey_reality"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:hint="ShortID"
+                        android:id="@+id/vmess_shortid_reality"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:hint="SpiderX"
+                        android:id="@+id/vmess_spiderx_reality"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/vless_layout"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="Address"
+                    android:id="@+id/vless_address"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="port"
+                    android:id="@+id/vless_port"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="id"
+                    android:id="@+id/vless_id"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Flow"/>
+
+            <Spinner
+                android:id="@+id/vless_flow_spin"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="Encryption"
+                    android:text="none"
+                    android:id="@+id/vless_encryption"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Network"/>
+
+            <Spinner
+                android:id="@+id/vless_network_spin"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Head Type"/>
+
+            <Spinner
+                android:id="@+id/vless_headtype_spin"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="Request Host(host/ws host/h2 host)"
+                    android:id="@+id/vless_requesthost"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:hint="Path(ws path/h2 path)"
+                    android:id="@+id/vless_path"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="TLS"/>
+
+            <Spinner
+                android:id="@+id/vless_tls_spin"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vless_tls_layout"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:hint="SNI"
+                        android:id="@+id/vless_sni"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fingerprint"/>
+                <Spinner
+                    android:id="@+id/vless_tls_fingerprint_spin"
+                    android:layout_height="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Alpn"/>
+                <Spinner
+                    android:id="@+id/vless_tls_alpn_spin"
+                    android:layout_height="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Insecure"/>
+                <Spinner
+                    android:id="@+id/vless_tls_insecure_spin"
+                    android:layout_height="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vless_reality_layout"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:hint="SNI"
+                        android:id="@+id/vless_sni_reality"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fingerprint"/>
+                <Spinner
+                    android:id="@+id/vless_reality_fingerprint_spin"
+                    android:layout_height="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:hint="Publickey"
+                        android:id="@+id/vless_publickey_reality"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:hint="ShortID"
+                        android:id="@+id/vless_shortid_reality"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:hint="SpiderX"
+                        android:id="@+id/vless_spiderx_reality"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="generate"
+                android:layout_weight="1.0"
+                android:id="@+id/btnSaveV2ray"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
+

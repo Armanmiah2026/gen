@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_add_http"
+        android:icon="@drawable/add_http"
+        android:iconTint="@color/black"
+        android:title="Add OpenVPN HTTP Payload" />
+    <item
+        android:id="@+id/menu_add_ssl"
+        android:icon="@drawable/add_ssl"
+        android:iconTint="@color/black"
+        android:title="Add SSL Payload" />
+    <item
+        android:id="@+id/menu_add_udp"
+        android:icon="@drawable/ic_add_v2ray"
+        android:iconTint="@color/black"
+        android:title="Add UDP Hysteria" />
+    <item
+        android:id="@+id/menu_add_v2ray"
+        android:icon="@drawable/ic_add_v2ray"
+        android:iconTint="@color/black"
+        android:title="Add V2Ray" />
+
+
+    <item
+        android:id="@+id/menu_add_openConnect"
+        android:icon="@drawable/add_http"
+        android:iconTint="@color/black"
+        android:title="Add OpenConnect" />
+
+    <item
+        android:id="@+id/menu_add_ssh"
+        android:icon="@drawable/add_http"
+        android:iconTint="@color/black"
+        android:title="Add SSH" />
+
+    <item
+        android:id="@+id/menu_add_slow_dns"
+        android:icon="@drawable/add_http"
+        android:iconTint="@color/black"
+        android:title="Add Slow DNS" />
+</menu>

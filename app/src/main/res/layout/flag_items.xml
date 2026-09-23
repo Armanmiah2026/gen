@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/base_server_grab" android:orientation="horizontal" android:layout_width="fill_parent" android:minHeight="40dp" android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/server_item_icon"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:src="@mipmap/ic_launcher" />
+            <LinearLayout
+                android:padding="0dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="0.0dip"
+                android:layout_weight="1.0">
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:id="@+id/server_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

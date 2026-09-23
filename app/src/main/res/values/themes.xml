@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="Theme.CloudGen5" parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorSecondary">@color/main_color</item>
+        <item name="colorTertiary">@color/main_color</item>
+
+        <!-- bottom bar still works -->
+        <item name="android:navigationBarColor">@color/main_color</item>
+
+        <!-- icons -->
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/wmbg"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="20dp"
+            android:background="@drawable/login_bg"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/icon"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"/>
+            <FrameLayout android:visibility="visible" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_marginTop="0dp" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout  android:background="@drawable/dd" android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="0dip">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_username"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"/>
+                    <EditText
+                        android:id="@+id/login_username"
+                        android:padding="10dp"
+                        android:layout_height="50dp"
+                        android:layout_width="fill_parent"
+                        android:background="#00000000"
+                        android:focusableInTouchMode="true"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:textColor="#ffffffff"
+                        android:textColorHint="#ffffffff"
+                        android:hint="Username" />
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout android:visibility="visible" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_marginTop="5dp" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:background="@drawable/dd" android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="7dip">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_password"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"/>
+                    <EditText
+                        android:id="@+id/login_password"
+                        android:padding="10dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_height="fill_parent"
+                        android:background="#00000000"
+                        android:textColor="#ffffffff"
+                        android:textColorHint="#ffffffff"
+                        android:textSize="12dp"
+                        android:layout_width="fill_parent"
+                        android:inputType="textPassword"
+                        android:hint="Password" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:id="@+id/loginBtn"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/main_color"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/sslmethod"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginStart="0.0dip"
+            android:layout_marginEnd="0.0dip" />
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/proto_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip">
+                <RadioButton
+                    android:id="@+id/openvpn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="OpenVPN" />
+                <RadioButton
+                    android:id="@+id/openconnect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OpenConnect"
+                    android:layout_marginStart="8.0dip" />
+                <RadioButton
+                    android:id="@+id/ssh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SSH"
+                    android:layout_marginStart="8.0dip" />
+            </RadioGroup>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Server" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/cf_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="CF"
+                android:layout_weight="1.0" />
+            <RadioButton
+                android:id="@+id/ws_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="WS"
+                android:layout_weight="1.0" />
+            <RadioButton
+                android:id="@+id/http_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="HTTP"
+                android:layout_weight="1.0" />
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etSSLName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="SSL Network Name"
+                android:ems="10"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etSSLSNI"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="SNI (eg: m.google.com)"
+                android:ems="10"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etSSLPayload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Payload"
+                android:maxLines="5"
+                android:ems="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etSSLPort"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Custom SSL Port (optional)"
+                android:maxLines="5"
+                android:ems="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/sslproxylay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proxy Settings" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2.5dip"
+                    android:layout_weight="1.0">
+                    <EditText
+                        android:id="@+id/etSquidProxy"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.5dip"
+                        android:hint="Squid Proxy/IP"
+                        android:ems="10"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0">
+                    <EditText
+                        android:id="@+id/etSquidPort"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Squid Port"
+                        android:singleLine="true"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/ckUseDefProxy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use Default Proxy" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etSSLInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="SSL Network Info"
+                android:ems="10"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Spinner
+            android:id="@+id/priority_spin"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_marginStart="0.0dip"
+            android:layout_marginEnd="0.0dip" />
+        <Button
+            android:id="@+id/btnSaveSSL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="Save" />
+    </LinearLayout>
+</ScrollView>

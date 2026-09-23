@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <EditText
+                android:id="@+id/text_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:hint="Descrypt Message"
+                android:textSize="12sp"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:background="?android:attr/dividerVertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:fillViewport="true">
+
+            <TextView
+                android:textSize="10sp"
+                android:id="@+id/result_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Result empty"
+                android:textIsSelectable="true"/>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

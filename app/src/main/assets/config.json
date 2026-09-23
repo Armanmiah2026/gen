@@ -1,0 +1,20 @@
+{
+  "Version": "1.0",
+  "Username": "",
+  "Password": "",
+  "banner1_url": "",
+  "banner2_url": "",
+  "banner3_url": "",
+  "banner_ad": "",
+  "interstitial_ad": "",
+  "rewarded_ad": "",
+  "app_open_ad": "",
+  "update_api": "",
+  "auth_api": "",
+  "notice_api": "",
+  "OVPNCert": "",
+  "Notes": "",
+  "Servers": [],
+  "Networks": [],
+  "SSLNetworks": []
+}

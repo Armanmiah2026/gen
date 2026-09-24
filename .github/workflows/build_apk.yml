@@ -33,9 +33,12 @@ jobs:
     - name: Build Debug APK with Gradle
       run: ./gradlew assembleDebug
 
-    # ৫. বিল্ড করা APK ফাইলটি GitHub Artifacts-এ সেভ করা
+    # ৫. বিল্ড করা APK ফাইলটি খুঁজে GitHub Artifacts-এ সেভ করা
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
-        path: app/build/outputs/apk/debug/app-debug.apk
+        path: |
+          **/*.apk
+          app/build/outputs/apk/**/*.apk
+          build/outputs/apk/**/*.apk

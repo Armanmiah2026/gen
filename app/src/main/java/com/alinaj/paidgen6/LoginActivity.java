@@ -137,7 +137,7 @@ public class LoginActivity extends AppCompatActivity {
         pd.setIndeterminate(true);
         pd.setMessage("Authenticating...");
         pd.show();
-        String url = "https://tunnel.mtkapi.site/api/files/app?json=abe644f3e65168144adb";
+        String url = "https://penel-demo.ggff.net/api/files/app?json=smtunnel1";
         RequestQueue requestQueue = Volley.newRequestQueue(LoginActivity.this);
         StringRequest req = new StringRequest(url,
                 new Response.Listener<String>() {
